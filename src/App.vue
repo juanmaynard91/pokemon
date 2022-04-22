@@ -6,7 +6,7 @@
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
- <h1>holaa</h1>
+ <h1>holaa que haces pa todo bien?</h1>
 </template>
 
 <style>
