@@ -1,12 +1,37 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import Navbar from "./components/Navbar.vue";
+import { reactive, onMounted } from "vue";
 
+const pokemones = reactive([]);
+
+onMounted(async () => {
+  try {
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=5");
+    const data = await res.json();
+    //console.log(data.results);
+
+    data.results.forEach((element, index) => {
+      const pokemon = {
+        ...element,
+        index: index++,
+      };
+
+      pokemones.push(pokemon);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+});
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
- <h1>holaa que haces pa todo bien?</h1>
+  <Navbar />
+
+  <ul>
+    <li v-for="pokemon in pokemones" :key="pokemon.index">
+      {{ pokemon.name }}
+    </li>
+  </ul>
 </template>
 
 <style>
@@ -16,6 +41,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+ul{
+  list-style: none;
 }
 </style>
