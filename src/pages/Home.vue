@@ -1,17 +1,18 @@
 <template>
   <div>
 
-
     <ul>
       <li v-for="pokemon in pokemones" :key="pokemon.id">
         <router-link :to="`/detalles/${pokemon.id}`">{{ pokemon.name }}</router-link>
         {{ pokemon.id }}
       </li>
     </ul>
+
   </div>
 </template>
 
 <script >
+
 import { reactive, toRefs, ref } from "vue";
 
 export default {
@@ -25,9 +26,9 @@ export default {
     //const { pokemones } = toRefs(state);
 
     const cargarPokemones = async () => {
-      const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=150");
+      const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=500");
       const data = await res.json();
-      //console.log(data.results);
+      //console.log(data);
 
       data.results.forEach((element, id) => {
         const pokemon = {
