@@ -8,16 +8,17 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-html,body {
+html,
+body {
   background-size: 200% 200%;
   /*background-image: linear-gradient( to bottom right, #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%);*/
   background-image: linear-gradient(to right, #fc00ff, #00dbde);
   width: 100%;
   height: auto;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   animation: bg-animado 5s linear infinite alternate;
 }
 

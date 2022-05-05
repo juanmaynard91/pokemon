@@ -60,9 +60,7 @@ const { pokemon, types, stats } = toRefs(state);
   });*/
 
 const detallePokemon = async () => {
-  const res = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${route.params.id}`
-  );
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${route.params.id}`);
   const data = await res.json();
   state.pokemon = data;
   //console.log(data);
