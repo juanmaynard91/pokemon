@@ -1,18 +1,14 @@
 <template>
   <div class="container">
-    <!--<form class="d-flex" @submit.prevent="buscarPokemones">
-      <input class="form-control me-2" type="text" placeholder="Ingresar nombre..." aria-label="Search" v-model.trim="nombrePokemon" />
-      <button class="btn btn-primary" type="submit">Buscar</button>
-    </form>-->
-
-    <input class="form-control me-2" type="text" placeholder="buscar..." aria-label="Search" v-model.trim="buscar" @keyup="buscarPokemones()" />
+    <input class="form-control mt-3" type="text" placeholder="buscar..." aria-label="Search" v-model.trim="buscar" @keyup="buscarPokemones()" />
 
     <div class="mt-3">
       <ul>
         <li v-for="pokemon in pokemonesFiltrados" :key="pokemon.id">
-          <h5>
-            <router-link :to="`/detalles/${pokemon.id}`">{{ pokemon.name }}</router-link> - {{ pokemon.id }}
-          </h5>
+          <h4>
+            <router-link :to="`/detalles/${pokemon.id}`">{{ pokemon.name }}</router-link> 
+          </h4>
+
         </li>
       </ul>
     </div>
@@ -32,6 +28,7 @@ export default {
     const pokemonesFiltrados = ref([]);
     const buscar = ref("");
     const pokeApi = "https://pokeapi.co/api/v2/pokemon";
+    //const imagenesPokemon = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon"
 
     //const { pokemones } = toRefs(state);
 
@@ -68,8 +65,7 @@ export default {
       nombrePokemon.value = "";*/
       //return pokemones.value.filter((pokemon)=>pokemon.name.includes(nombrePokemon.value.toLowerCase()))
 
-      pokemonesFiltrados.value = pokemones.value.filter((pokemon) => pokemon.name.includes(buscar.value.toLowerCase())
-      );
+      pokemonesFiltrados.value = pokemones.value.filter((pokemon) => pokemon.name.includes(buscar.value.toLowerCase()) );
     };
 
     return { pokemones, buscar, buscarPokemones, pokemonesFiltrados };
@@ -82,4 +78,5 @@ a {
   color: black;
   text-decoration: none;
 }
+
 </style>
