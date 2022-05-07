@@ -1,7 +1,10 @@
 <template>
+<div class="container">
   <div id="chart">
     <apexchart class="chart" type="bar" height="350" :options="chartOptions" :series="series"></apexchart>
   </div>
+</div>
+
 </template>
 
 <script setup>
@@ -22,13 +25,15 @@ const chartOptions = {
   },
   dataLabels: { enabled: true },
   xaxis: {
-    categories: [ "HP", "Ataque", "Defensa", "Ataque Especial", "Defensa Especial", "Velocidad" ],
+    categories: [ "HP", "ATAQUE", "DEFENSA", "ATAQUE ESPECIAL", "DEFENSA ESPECIAL", "VELOCIDAD" ],
   },
 };
 </script>
 
 <style>
+
 .chart{
   filter: drop-shadow(0 0 1rem black);
 }
+
 </style>
