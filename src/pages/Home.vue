@@ -25,7 +25,7 @@ export default {
     const pokeApi = "https://pokeapi.co/api/v2/pokemon";
 
     const cargarPokemones = async () => {
-      const res = await fetch(`${pokeApi}?limit=900`);
+      const res = await fetch(`${pokeApi}?limit=898`);
       const data = await res.json();
       //console.log(data);
 
@@ -42,7 +42,8 @@ export default {
     cargarPokemones();
 
     const buscarPokemones = () => {
-      pokemonesFiltrados.value = pokemones.value.filter((elem) => elem.name.includes(buscar.value.toLowerCase()));
+      pokemonesFiltrados.value = 
+        pokemones.value.filter((elem) => elem.name.includes(buscar.value.toLowerCase()));
     };
 
     return { pokeApi, buscarPokemones, buscar, pokemonesFiltrados };

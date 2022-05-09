@@ -18,6 +18,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   animation: bg-animado 5s linear infinite alternate;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=27134), auto;
+}
+
+a:hover {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=27134), auto;
 }
 
 @keyframes bg-animado {
