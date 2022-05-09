@@ -8,8 +8,6 @@ import Navbar from "./components/Navbar.vue";
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 html,
 body {
   background-size: 200% 200%;
@@ -18,7 +16,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
   animation: bg-animado 5s linear infinite alternate;
 }
 

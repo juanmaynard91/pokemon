@@ -73,7 +73,7 @@ detallePokemon();
   }
 }
 
-.tipoPokemon{
+.tipoPokemon {
   width: 10rem;
   margin: auto;
 }

@@ -42,12 +42,10 @@ export default {
     cargarPokemones();
 
     const buscarPokemones = () => {
-      pokemonesFiltrados.value = pokemones.value.filter((pokemon) =>
-        pokemon.name.includes(buscar.value.toLowerCase())
-      );
+      pokemonesFiltrados.value = pokemones.value.filter((elem) => elem.name.includes(buscar.value.toLowerCase()));
     };
 
-    return { pokeApi, buscarPokemones, buscar, pokemonesFiltrados, };
+    return { pokeApi, buscarPokemones, buscar, pokemonesFiltrados };
   },
 };
 </script>
