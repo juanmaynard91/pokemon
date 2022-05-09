@@ -5,7 +5,7 @@
 
       <img class="imgPokemon" :src="pokemon.sprites.front_default" :alt="pokemon.name" loading="lazy" />
 
-      <div v-for="type in types" :key="type">
+      <div class="tipoPokemon" v-for="type in types" :key="type">
         <h5 :class="type">{{ type }}</h5>
       </div>
     </div>
@@ -71,6 +71,11 @@ detallePokemon();
     height: 10rem;
     object-fit: contain;
   }
+}
+
+.tipoPokemon{
+  width: 10rem;
+  margin: auto;
 }
 
 .normal {
