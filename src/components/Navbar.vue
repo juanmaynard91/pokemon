@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <router-link class="nav-link" aria-current="page" to="/">
-      <img class="logoPokemon" src="../assets/logo_pokemon.png" alt="logo pokemon" />
+      <img class="logoPokemon" src="../assets/pokeapi.png" alt="logo pokemon" />
       </router-link>
     </div>
   </nav>
