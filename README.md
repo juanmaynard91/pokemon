@@ -1,7 +1,7 @@
-# Vue 3 + Vite
+DESCIPCION: Aplicacion de PokeApi hecha con Vue Vite 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+LINK: https://silver-swan-e43b4e.netlify.app
 
-## Recommended IDE Setup
+![listado_de_pokemones](https://user-images.githubusercontent.com/74424452/167517900-1a866a70-7bd0-4c05-ab94-dea812cfe5d4.png)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+![detalle_del_pokemon](https://user-images.githubusercontent.com/74424452/167517906-6a1c7b24-200e-4884-8897-b505d81795d4.png)
