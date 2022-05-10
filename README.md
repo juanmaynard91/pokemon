@@ -1,4 +1,4 @@
-DESCIPCION: Aplicacion de PokeApi hecha con Vue Vite 
+DESCIPCION: Aplicacion de PokeApi hecho con Vue Vite 
 
 LINK: https://silver-swan-e43b4e.netlify.app
 
