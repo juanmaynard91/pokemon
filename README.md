@@ -1,6 +1,6 @@
 DESCIPCION: Aplicacion de PokeApi hecho con Vue Vite 
 
-LINK: https://silver-swan-e43b4e.netlify.app
+LINK: [https://silver-swan-e43b4e.netlify.app](https://pokedex-vue-vite.netlify.app/#/)
 
 ![listado_de_pokemones](https://user-images.githubusercontent.com/74424452/167518211-f14fb7d2-680c-4825-b352-e64943692042.png)
 
