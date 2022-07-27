@@ -31,9 +31,5 @@ const chartOptions = {
 </script>
 
 <style>
-
-.chart{
-  filter: drop-shadow(0 0 1rem black);
-}
-
+.chart{filter: drop-shadow(0 0 1rem black);}
 </style>

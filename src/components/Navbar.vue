@@ -12,19 +12,5 @@
 </script>
 
 <style>
-.container-fluid {
-  display: flex;
-  justify-content: center !important;
-  align-items: center;
-}
-
-.logoPokemon {
-  height: 4rem;
-}
-
-@media screen and (max-width: 375px) {
-  .logoPokemon {
-    height: 3rem;
-  }
-}
+.container-fluid {display: flex;justify-content: center !important;align-items: center;}.logoPokemon {height: 4rem;}@media screen and (max-width: 375px) {.logoPokemon {height: 3rem;}}
 </style>

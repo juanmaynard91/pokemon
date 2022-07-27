@@ -52,9 +52,5 @@ export default {
 </script>
 
 <style>
-a {
-  color: black;
-  text-decoration: none;
-}
-
+a {color: black;text-decoration: none;}
 </style>
