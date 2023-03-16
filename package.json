@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
