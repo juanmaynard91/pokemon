@@ -10,12 +10,12 @@ import Navbar from "./components/Navbar.vue";
 <style>
 html,
 body {
-  background-size: 200% 200%;
+  animation: bg-animado 5s linear infinite alternate;
   background-image: linear-gradient(to right, #833ab4, #fd1d1d);
+  background-size: 200% 200%;
+  cursor: url(./assets/cursor.cur), auto;
   text-align: center;
   text-transform: uppercase;
-  animation: bg-animado 5s linear infinite alternate;
-  cursor: url(./assets/cursor.cur), auto;
 }
 a:hover {
   cursor: url(./assets/cursor.cur), auto;
@@ -31,4 +31,5 @@ a:hover {
 ul {
   list-style: none;
 }
+
 </style>

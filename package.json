@@ -8,14 +8,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "apexcharts": "^3.35.0",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.14",
+    "apexcharts": "^3.39.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
     "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.5",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "cssnano": "^6.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "terser": "^5.17.1",
+    "vite": "^4.3.1",
     "vite-plugin-compression": "^0.5.1"
   }
 }

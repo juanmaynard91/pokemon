@@ -5,12 +5,14 @@ import Detalles from '../pages/Detalles.vue'
 
 const routes = [
   {
-    path: '/',
-    component: Home
+    path: "/",
+    name: "home",
+    component: Home,
   },
   {
     path: '/detalles/:id',
-    component: Detalles
+    name: "detalles",
+    component: Detalles,
   }
 ]
 
